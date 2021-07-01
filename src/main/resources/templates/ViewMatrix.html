@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" href="result.css">
+    <title>CrossWord</title>
+</head>
+
+	<body>
+	<h1>Generated SquareMatrix: </h1>
+		<table id="parent" th:each="matric:${matrixs}">
+						<tr th:each="row: ${matric.squareMatrix}">
+							<td th:each="value: ${row}" th:text="${value}" ></td>
+        				</tr>
+			</table>
+		
+		<form action= "#" th:action="@{/searchResult}" method= "GET">
+			<table>
+				<tr><td>String to be Matched:</td>
+					<td><input type="text" name="match"/></td>
+				</tr>
+			
+				<tr>	
+					<td></td>
+					<td><input type="submit" value="Search"></td>
+				</tr>
+			</table>
+		</form>
+		
+	</body>
+</html>

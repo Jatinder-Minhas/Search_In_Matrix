@@ -1,0 +1,89 @@
+h1
+{
+	margin-top: 30px;
+    color: coral;
+    font-size: 30px;
+    margin-left: 35%;
+}
+
+body
+{
+    margin-top: 10%;
+    background-image: url("PubNative-Web-Background-Design.png");
+    background-color: #cccccc;
+}
+
+span
+{
+	padding: 5px;
+    display: inline-block;
+    font-size: 20px;
+    font-style: normal;
+    color: peru;
+}
+
+div
+{
+	margin: 10px 0px;
+}
+
+table
+{
+    width: auto;
+    box-shadow: black;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: peru;
+}
+
+#parent
+{
+	width: 20%;
+    box-sizing: border-box;
+    margin: 0px 35%;
+ }
+
+input[type=submit], input[type=button]
+{
+	
+	float: right;
+    padding: 5px 20px;
+    margin: 0px 10px;
+    margin-right: 200px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: royalblue;
+}
+
+input[type=submit]:hover
+{
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05, 1.05);
+}
+
+input[type=button]:hover
+{
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05, 1.05);
+}
+
+label
+{
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+form
+{
+    width: 40%;
+    box-shadow: black;
+    box-sizing: border-box;
+    margin: 80px 35%;
+}

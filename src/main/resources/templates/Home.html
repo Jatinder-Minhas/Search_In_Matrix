@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<link rel="stylesheet" href="Home.css">
+		<title>CrossWord</title>
+	</head>
+	
+	<body>
+		<h1>Compressed Sparse Row</h1>
+		
+		<form action= "#" th:action="@{/add}" th:object="${matrix}" method= "GET">
+
+		<table>
+			<tr> 
+				<td>Side Length of the square matrix:</td>	
+				<td><input type="number" name="n" th:field="*{side}" min="5" /></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><a href="http://localhost:8080/viewMatrix"><input type="button" value="Result"></a>
+					<input type="submit" value="SUBMIT">
+				</td>
+			</tr>
+			
+		</table>
+			
+		</form>
+		
+	</body>
+</html>

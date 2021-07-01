@@ -1,0 +1,67 @@
+h1
+{
+    color: coral;
+    font-size: 80px;
+    text-align: center;
+}
+
+body
+{
+    margin-top: 80px;
+    background-image: url("PubNative-Web-Background-Design.png");
+    background-color: #cccccc;
+}
+
+form
+{
+    width: 50%;
+    box-shadow: black;
+    box-sizing: border-box;
+    margin: 80px 450px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number]
+{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 30px;
+    width: 300px;
+    line-height: 20px;
+    background-color: ghostwhite;
+}
+
+input[type=submit], input[type=button]
+{
+    padding: 5px 20px;
+    margin: 0px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    color: white;
+    background-color: royalblue;
+}
+
+input[type=submit]:hover
+{
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05, 1.05);
+}
+
+input[type=button]:hover
+{
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05, 1.05);
+}
+
+label
+{
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}

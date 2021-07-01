@@ -1,0 +1,39 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<link rel="stylesheet" href="Home.css">
+		<title>Crossword</title>
+	</head>
+	
+	<body>
+		<h1>Please enter your user Details</h1>
+		
+		<form action= "#" th:action="@{/login}" method= "GET">
+			
+			<table>
+			
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" name="userName"  /></td>
+			</tr>
+			
+			<tr></tr>
+																	
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" name="password" min="5" /></td>
+			</tr>
+			
+			<tr></tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Resister"></td>
+			</tr>
+			
+			</table>
+			
+		</form>
+		
+	</body>
+</html>

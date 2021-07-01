@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" href="result.css">
+    <title>CrossWord</title>
+</head>
+
+	<body>
+	<h1>Generated SquareMatrix: </h1>
+		<table id="parent" th:each="matric:${matrixs}">
+						<tr id="box" th:each="row: ${matric.squareMatrix}">
+							<td th:each="value: ${row}" th:text="${value}" ></td>
+        				</tr>
+			</table>
+		
+		<div th:each="matric:${matrixs}">
+		
+		<span>String to be Matched:	<span th:text="${matric.match}"></span></span>
+		
+                <div th:switch="${matric.matchResult}">
+					
+					
+                    <div th:case="false">
+                    <span>Result:	</span>
+						<span>String Not Found!</span>
+						 
+                    </div>
+
+                    <div th:case="true">
+                    <span>Result:	</span>
+                        <span>String Found!</span>
+                    </div>
+                    
+                </div>
+          </div>
+          
+          <span>Do you Want to play more: </span>
+          <a href="http://localhost:8080/viewMatrix"><button>Yes</button></a>
+		
+	</body>
+</html>
