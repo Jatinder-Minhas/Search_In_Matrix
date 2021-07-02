@@ -78,7 +78,7 @@ public class HomeController
 		
 		model.addAttribute("matrixs", DataBase.sparse);
 		
-		return "result";
+		return "Result";
 	}
 	
 }
