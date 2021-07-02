@@ -66,7 +66,7 @@ public class HomeController
 		return "ViewMatrix";
 	}
 	
-	@GetMapping("/searchResult")
+	@PostMapping("/searchResult")
 	public String goSearchResult(Model model, @RequestParam String match)
 	{
 		DataBase.sparse.get(0).setMatch(match);
